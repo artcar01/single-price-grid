@@ -5,45 +5,167 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Single Price Grid Component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      background-color: hsl(204, 43%, 93%);
+      font-family: 'Karla', sans-serif;
+      font-size: 16px;
+    }
+    
+    h2 {
+      color:  hsl(179, 62%, 43%);
+      font-weight: 700;
+    }
+
+    h3 {
+      font-weight: 700;
+    }
+
+    h4 {
+      color: hsl(71, 73%, 54%);
+    }
+
+    b {
+      font-size: xx-large;
+    }
+
+    button {
+      color: white;
+      background-color:  hsl(71, 73%, 54%);
+      border: none;
+      border-radius: 5px;
+      font-family: 'Karla', sans-serif;
+      font-size: 16px;
+      padding: 5% 38% 5% 38%;
+    }
+
+    ul {
+      font-weight: 400;
+      list-style-type: none;
+      line-height: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-container {
+      background-color: white;
+      border-radius: 5px 5px 0 0;
+      color:  hsl(218, 22%, 67%);
+      line-height: 25px;
+      margin: 20% 5% 0 5%;
+      padding: 10%;
+    }
+    
+    .price-side {
+      background-color: hsl(179, 62%, 43%);
+      color: white;
+      margin: 0 5% 0 5%;
+      padding: 10%;
+    }
+
+    .pros-side {
+      background-color: hsl(179, 62%, 43%);
+      border-radius: 0 0 5px 5px;
+      color: white;
+      opacity: 0.8;
+      margin: 0 5% 20% 5%;
+      padding: 10%;
+    }
+
+    @media (min-width: 700px) {
+      .top-container {
+        background-color: white;
+        border-radius: 15px 15px 0 0;
+        color:  hsl(218, 22%, 67%);
+        line-height: 25px;
+        margin: 10% 20% 0 20%;
+        padding: 5% 5% 2% 5%;
+      }
+
+      .bottom-container {
+        display: flex;
+        flex-direction: row;
+        align-content: space-evenly;
+        margin: 0% 20% 10% 20%;
+      }
+      
+      .price-side {
+        background-color: hsl(179, 62%, 43%);
+        line-height: 35px;
+        border-radius: 0 0 0 15px;
+        color: white;
+        flex: 50%;
+        margin: 0;
+        padding:  5% 8% 5% 8%;
+      }
+
+      .pros-side {
+        background-color: hsl(179, 62%, 43%);
+        border-radius: 0 0 15px 0;
+        color: white;
+        opacity: 0.8;
+        flex: 50%;
+        margin: 0;
+        padding:  5% 8% 5% 8%;
+      }
+    }
+
+    .attribution {
+      font-size: 11px; 
+      text-align: center; 
+    }
+    
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
 <body>
-  Join our community
+      <div class="top-container">
+        <h2>Join our community</h2>
 
-  30-day, hassle-free money back guarantee
+        <h4>30-day, hassle-free money back guarantee</h4>
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+        <p>Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.</p>
+      </div>
+      <div class="bottom-container">
+        <div class="price-side">
+          <h3>Monthly Subscription</h3>
 
-  Monthly Subscription
+          <p><b>&dollar;29</b> per month</p>
 
-  &dollar;29 per month
+          <p>Full access for less than &dollar;1 a day</p>
 
-  Full access for less than &dollar;1 a day
+          <button>Sign Up</button>
+        </div>
+        <div class="pros-side">  
+          <h3>Why Us</h3>
 
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
+          <div>
+            <ul>
+              <li>Tutorials by industry experts</li>
+              <li>Peer &amp; expert code review</li>
+              <li>Coding exercises</li>
+              <li>Access to our GitHub repos</li>
+              <li>Community forum</li>
+              <li>Flashcard decks</li>
+              <li>New videos every week</li>
+            </ul>
+          </div>
+        </div>
+      </div>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://twitter.com/art_art87">Art Carida</a>.
     </p>
   </footer>
 </body>
